@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E0F1FA"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADIVINAR NÚMERO"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:textAlignment="center"
+        android:background="@color/black"/>
+
+    <!-- el rango de los numeros -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="La aplicación generará un número aleatorio dentro de un rango predefinido entre 1 y 100"/>
+
+    <!-- Input para el intento -->
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu número"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón para enviar el intento -->
+    <Button
+        android:id="@+id/btnGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adivinar"
+        android:layout_gravity="center"
+        android:tooltipText="Presione el botón para adivinar el número"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notas:"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:background="@color/black"/>
+
+    <!-- Mensaje de retroalimentación -->
+    <TextView
+        android:id="@+id/tvFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Introduce un número para comenzar"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Número de intentos restantes -->
+    <TextView
+        android:id="@+id/tvAttempts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intentos restantes: 10"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón para reiniciar -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar"
+        android:background="#28026B"
+        android:visibility="gone" />
+</LinearLayout>
